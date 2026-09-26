@@ -25,6 +25,37 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* Contenedor para alinear la caja de texto y el botón */
+.controls-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Caja de texto estilo infantil */
+.input-numero {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    border: 3px solid #ff9a9e;
+    border-radius: 50px;
+    outline: none;
+    width: 130px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+}
+
+.input-numero:focus {
+    border-color: #ff5252;
+    transform: scale(1.05);
+}
+
 /* Botón estilo juguetón y animado */
 .btn-probar {
     font-family: 'Fredoka One', cursive;
@@ -80,14 +111,14 @@ body {
     text-shadow: 2px 2px 0px #ffeaa7;
 }
 
-/* Lista de la tabla con efecto dinámico */
+/* Contenedor de la tabla */
 .tabla {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
 
+/* Filas dinámicas de la tabla */
 .fila {
     background-color: #f0f8ff;
     padding: 0.8rem 1.2rem;
@@ -102,12 +133,12 @@ body {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.multiplication-table li:hover {
+.fila:hover {
     transform: scale(1.03);
     background-color: #e3f2fd;
 }
 
-.multiplication-table li span {
+.fila span {
     font-family: 'Fredoka One', cursive;
     font-size: 1.3rem;
     color: #ff9800;
@@ -154,7 +185,28 @@ body {
         font-size: 1.6rem;
     }
 
-    .multiplication-table li {
+    .fila {
         font-size: 1.05rem;
     }
+}
+
+/* Estilos para las instrucciones y textos intuitivos */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.label-instruccion {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #555;
+}
+
+.help-text {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
 }
