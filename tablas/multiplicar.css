@@ -81,14 +81,14 @@ body {
 }
 
 /* Lista de la tabla con efecto dinámico */
-.multiplication-table {
+.tabla {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
 
-.multiplication-table li {
+.fila {
     background-color: #f0f8ff;
     padding: 0.8rem 1.2rem;
     border-radius: 15px;
